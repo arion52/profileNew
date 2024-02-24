@@ -6,7 +6,7 @@ html, body {
 
 body{
     font: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, black, rgb(151, 151, 151));
+    background: linear-gradient(to right, black, rgb(23, 10, 41));
 }
   
 
@@ -123,6 +123,7 @@ body{
 }
 
 .about {
+    
     padding: 10px;
     font-family: monospace;
     font-size: 14px;
@@ -132,8 +133,10 @@ body{
 }
 
 .code {
-    border-radius: 4px;
-    padding: 10px;
+    background-color: #36363656;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    padding-top: 0px;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     font-size: 14px;
     display: flex;
@@ -354,4 +357,56 @@ body{
     border-radius: 10px;
 }
 
-/* Footer */
+/* contact */
+
+.contact {
+    padding: 10px;
+    font-size: 14px;
+    color: #cfcfcf;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
+    height: 200px;
+    min-height: 200px;
+}
+
+.contact-icon {
+    position: relative;
+    width: calc(33% - 20px);
+    margin: 10px;
+    height: 200px;
+    perspective: 1000px;
+    font-size: 24px;
+}
+
+.contact-link a{
+    color: #ce99fa;
+    text-decoration: none;
+    font-size: medium;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #36363600;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
