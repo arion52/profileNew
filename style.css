@@ -6,7 +6,7 @@ html, body {
 
 body{
     font: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, black, rgb(40, 18, 71));
+    background: linear-gradient(to right, black, rgb(18, 47, 71));
 }
   
 
@@ -139,7 +139,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
 }
 
 .navbar a {
@@ -449,7 +448,7 @@ body{
 }
 
 .contact-link a{
-    color: #ce99fa;
+    color: #7cccfa;
     text-decoration: none;
     font-size: medium;
 }
