@@ -300,8 +300,6 @@ body{
     color: #cfcfcf;
     width: 100%;
     margin: 0 auto;
-    height: 400px;
-
 }
 
 .project-container {
@@ -314,15 +312,13 @@ body{
     margin: 0 auto;
     width: 100%;
     max-width: 1500px;
-    height: 200px;
-    min-height: 200px;
 }
 
 .project {
     position: relative;
     width: calc(33% - 20px);
     margin: 10px;
-    height: 200px;
+    height: auto;
     perspective: 1000px;
 }
 
@@ -408,6 +404,17 @@ body{
     border-radius: 10px;
 }
 
+@media only screen and (max-width: 1200px) {
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-grow: 1;
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+}
 /* contact */
 
 .contact {
