@@ -313,7 +313,7 @@ body{
 
 .project {
     position: relative;
-    width: calc(33% - 20px);
+    flex: 1;
     margin: 10px;
     height: auto;
     perspective: 1000px;
@@ -321,7 +321,6 @@ body{
 
 .project-content {
     position: relative;
-    width: 100%;
     text-align: center;
     transition: transform 0.8s;
     display: grid;
@@ -408,7 +407,6 @@ body{
     }
 
     .project {
-        flex-grow: 1;
         width: 100%;
         margin-bottom: 20px; 
     }
