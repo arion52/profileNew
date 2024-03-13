@@ -1,166 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bargav Krishna</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-<body>
-    
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #8b8b8b00; font-family:-apple-system, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-            <div class="container-fluid" >
-                <a class="navbar-brand" href="#" style="font-size: 0.7cm; align-content: center;">Bargav Krishna</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects" >Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-    </nav> 
-        <div id="particles-js">
-            <div class="container-fluid">
-                <div class="content">
-                    <div class="text">
-                        <p style="color: rgb(175, 175, 175);">Hello, I'm</p>
-                        <h1>Bargav Krishna</h1>
-                        <p style="color: rgb(175, 175, 175); font-family: 'Courier New', Courier, monospace;" class="typewriter"></p>
-                    </div>
-                    <div class="picture">
-                        <img src="assets/1.png" alt="Person 1" style="width: 100%; height: 100%;">
-                    </div>
-                </div>
-            </div>  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arion</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="
+        background-color: #8b8b8b00;
+        font-family: -apple-system, -apple-system, BlinkMacSystemFont,
+          'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+          'Helvetica Neue', sans-serif;
+      "
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="font-size: 0.7cm; align-content: center"
+          >Arion</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-
-    <br>
-
-    
-    <div class="about" id="about">
-        <div class="glsmp">
-            <h2 style="color: #336297; font-size: 0.9cm;">About Me/&gt;</h2>
-            <div class="code">
-                <div class="code-block">
-                    <div class="code-line">
-                        <span class="comment"># I will because I can.</span>
-                    </div>
-
-                    <div class="code-line">
-                        <span class="keyword">class</span> <span class="operator">Bargav</span>
-                    </div>
-                    <div class="code-line">
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">def</span> __init__(<span class="operator">self</span>):
-                    </div>
-                    <div class="code-line">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="operator">self</span>.<span class="variable">name</span> = <span class="string">"Bargav Krishna"</span>
-                    </div>
-                    <div class="code-line">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="operator">self</span>.<span class="variable">age</span> = <span class="number">18</span>
-                    </div>
-                    <div class="code-line">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="operator">self</span>.<span class="variable">about</span> = <span class="string">"Hey I'm a curious student who loves to learn new things by getting hands on with the code."</span>
-                    </div>
-                    <div class="code-line">
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">def</span> skills(<span class="operator">self</span>):
-                    </div>
-                    <div class="code-line">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> [<span class="string">'HTML/CSS', 'JavaScript', 'Python', 'Flutter/Dart', 'React', 'Bootstrap', 'git', 'UI/UX', 'Tensorflow', 'OpenCV', 'sklearn'</span>, <span class="typewriter"></span> ]
-                    </div>
-                </div>
-            </div>
+      </div>
+    </nav>
+    <div id="particles-js">
+      <div class="container-fluid">
+        <div class="content">
+          <div class="text">
+            <p style="color: rgb(175, 175, 175)">Hello, I'm</p>
+            <h1>Arion</h1>
+            <p
+              style="
+                color: rgb(175, 175, 175);
+                font-family: 'Courier New', Courier, monospace;
+              "
+              class="typewriter"
+            ></p>
+          </div>
+          <div class="picture">
+            <img
+              src="assets/1.png"
+              alt="Person 1"
+              style="width: 100%; height: 100%"
+            />
+          </div>
         </div>
+      </div>
     </div>
 
-    <br><br>
+    <br />
+
+    <div class="about" id="about">
+      <div class="glsmp">
+        <h2 style="color: #336297; font-size: 0.9cm">About Me/&gt;</h2>
+        <div class="code">
+          <div class="code-block">
+            <div class="code-line">
+              <span class="comment"># I will because I can.</span>
+            </div>
+
+            <div class="code-line">
+              <span class="keyword">class</span>
+              <span class="operator">Arion</span>
+            </div>
+            <div class="code-line">
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">def</span>
+              __init__(<span class="operator">self</span>):
+            </div>
+            <div class="code-line">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                class="operator"
+                >self</span
+              >.<span class="variable">name</span> =
+              <span class="string">"Arion"</span>
+            </div>
+            <div class="code-line">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                class="operator"
+                >self</span
+              >.<span class="variable">age</span> =
+              <span class="number">18</span>
+            </div>
+            <div class="code-line">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                class="operator"
+                >self</span
+              >.<span class="variable">about</span> =
+              <span class="string"
+                >"Hey I'm a curious student who loves to learn new things by
+                getting hands on with the code."</span
+              >
+            </div>
+            <div class="code-line">
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">def</span>
+              skills(<span class="operator">self</span>):
+            </div>
+            <div class="code-line">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                class="keyword"
+                >return</span
+              >
+              [<span class="string"
+                >'HTML/CSS', 'JavaScript', 'Python', 'Flutter/Dart', 'React',
+                'Bootstrap', 'git', 'UI/UX', 'Tensorflow', 'OpenCV',
+                'sklearn'</span
+              >, <span class="typewriter"></span> ]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
 
     <div class="projects" id="projects">
-        <h2 style="color: #336297; font-size: 0.9cm; width: 75%; margin: 0 auto;">Projects/&gt;</h2>
-        <div class="project-container">
-            <div class="project">
-                <div class="project-content">
-                    <div class="project-front">
-                        <div class="project-title"><p>Road Extraction</p></div>
-                        <img src="assets/sre.png" alt="Project Image" class="project-image">
-                    </div>
-                    <div class="project-back">
-                        <div class="project-description">Created an AI model that extracts the road networks from the given satellite image. Made a hybrid model using U-Net and CNN to achieve the same.</div>
-                        <a href="https://github.com/otakuCoderr/satellite-road-extraction" class="project-link">GitHub Link</a>
-                    </div>
-                </div>
+      <h2 style="color: #336297; font-size: 0.9cm; width: 75%; margin: 0 auto">
+        Projects/&gt;
+      </h2>
+      <div class="project-container">
+        <div class="project">
+          <div class="project-content">
+            <div class="project-front">
+              <div class="project-title"><p>Road Extraction</p></div>
+              <img
+                src="assets/sre.png"
+                alt="Project Image"
+                class="project-image"
+              />
             </div>
-            <div class="project">
-                <div class="project-content">
-                    <div class="project-front">
-                        <div class="project-title">Expx</div>
-                        <img src="assets/expx.png" alt="Project Image" class="project-image">
-                    </div>
-                    <div class="project-back">
-                        <div class="project-description">A cross platform app to learn and teach any skill. Teach skills which you excel and learn from prople who are good at other skill.</div>
-                        <p class="project-link">WIP</p>
-                    </div>
-                </div>
+            <div class="project-back">
+              <div class="project-description">
+                Created an AI model that extracts the road networks from the
+                given satellite image. Made a hybrid model using U-Net and CNN
+                to achieve the same.
+              </div>
+              <a
+                href="https://github.com/otakuCoderr/satellite-road-extraction"
+                class="project-link"
+                >GitHub Link</a
+              >
             </div>
-            <div class="project">
-                <div class="project-content">
-                    <div class="project-front">
-                        <div class="project-title"><p>Bodhimaram</p></div>
-                        <img src="assets/bmr.png" alt="Project Image" class="project-image">
-                    </div>
-                    <div class="project-back">
-                        <div class="project-description">A website made for playschool. Made use of Wordpress for simplicity and efficiency.</div>
-                        <a href="https://bodhimaram.in" class="project-link">Project Link</a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="project">
+          <div class="project-content">
+            <div class="project-front">
+              <div class="project-title">Expx</div>
+              <img
+                src="assets/expx.png"
+                alt="Project Image"
+                class="project-image"
+              />
+            </div>
+            <div class="project-back">
+              <div class="project-description">
+                A cross platform app to learn and teach any skill. Teach skills
+                which you excel and learn from prople who are good at other
+                skill.
+              </div>
+              <p class="project-link">WIP</p>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-content">
+            <div class="project-front">
+              <div class="project-title"><p>Bodhimaram</p></div>
+              <img
+                src="assets/bmr.png"
+                alt="Project Image"
+                class="project-image"
+              />
+            </div>
+            <div class="project-back">
+              <div class="project-description">
+                A website made for playschool. Made use of Wordpress for
+                simplicity and efficiency.
+              </div>
+              <a href="https://bodhimaram.in" class="project-link"
+                >Project Link</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    <br><br>
+
+    <br /><br />
 
     <div class="contact" id="contact">
-        <h2 style="color: #336297; font-size: 0.9cm;">Contact/&gt;</h2>
-        <div class="contact-container">
-            <div class="contact-content">
-                <div class="contact-text">
-                    <p>Get in touch with me</p>
-                    <span class="contact-icon"><i class="fas fa-envelope"></i></span><span class="contact-link"><a href="mailto:bargavkrishna26@gmail.com">Mail</a></span>
-                </div>
-            </div>
-            <div class="contact-content">
-                <div class="contact-text">
-                    <p>Check out my GitHub</p>
-                    <span class="contact-icon"><i class="fab fa-github"></i></span><span class="contact-link"><a href="https://github.com/otakuCoderr" target="_blank">otakuCoderr</a></span>
-                </div>
-            </div>
-            <div class="contact-content">
-                <div class="contact-text">
-                    <p>Connect with me on LinkedIn</p>
-                    <span class="contact-icon"><i class="fab fa-linkedin"></i></span><span class="contact-link"><a href="https://www.linkedin.com/in/bargav-krishna-2b3b3b1b3/" target="_blank">Bargav Krishna</a></span>
-                </div>
-            </div>
+      <h2 style="color: #336297; font-size: 0.9cm">Contact/&gt;</h2>
+      <div class="contact-container">
+        <div class="contact-content">
+          <div class="contact-text">
+            <p>Get in touch with me</p>
+            <span class="contact-icon"><i class="fas fa-envelope"></i></span
+            ><span class="contact-link"
+              ><a href="mailto:bargavkrishna26@gmail.com">Mail</a></span
+            >
+          </div>
         </div>
+        <div class="contact-content">
+          <div class="contact-text">
+            <p>Check out my GitHub</p>
+            <span class="contact-icon"><i class="fab fa-github"></i></span
+            ><span class="contact-link"
+              ><a href="https://github.com/arion52" target="_blank"
+                >Arion52</a
+              ></span
+            >
+          </div>
+        </div>
+        <div class="contact-content">
+          <div class="contact-text">
+            <p>Connect with me on LinkedIn</p>
+            <span class="contact-icon"><i class="fab fa-linkedin"></i></span
+            ><span class="contact-link"
+              ><a
+                href="https://www.linkedin.com/in/bargav-krishna-2b3b3b1b3/"
+                target="_blank"
+              ></a
+            ></span>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/scroll-top.png"></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img src="assets/scroll-top.png" />
+    </button>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
     <script src="particle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
