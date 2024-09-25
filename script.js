@@ -47,30 +47,43 @@ function topFunction() {
   });
 }
 
-function showAbout() {
-  document.getElementById("landing-page").style.display = "none";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("timeline").style.display = "none";
-  document.getElementById("about").style.display = "block";
-}
+// function showAbout() {
+//   document.getElementById("landing-page").style.display = "none";
+//   document.getElementById("projects").style.display = "none";
+//   document.getElementById("timeline").style.display = "none";
+//   document.getElementById("about").style.display = "block";
+// }
 
-function showProjects() {
-  document.getElementById("landing-page").style.display = "none";
-  document.getElementById("about").style.display = "none";
-  document.getElementById("timeline").style.display = "none";
-  document.getElementById("projects").style.display = "block";
-}
+// function showProjects() {
+//   document.getElementById("landing-page").style.display = "none";
+//   document.getElementById("about").style.display = "none";
+//   document.getElementById("timeline").style.display = "none";
+//   document.getElementById("projects").style.display = "block";
+// }
 
-function showTimeline() {
-  document.getElementById("landing-page").style.display = "none";
-  document.getElementById("about").style.display = "none";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("timeline").style.display = "block";
-}
+// function showTimeline() {
+//   document.getElementById("landing-page").style.display = "none";
+//   document.getElementById("about").style.display = "none";
+//   document.getElementById("projects").style.display = "none";
+//   document.getElementById("timeline").style.display = "block";
+// }
 
-function showLandingPage() {
-  document.getElementById("about").style.display = "none";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("timeline").style.display = "none";
-  document.getElementById("landing-page").style.display = "block";
+// function showLandingPage() {
+//   document.getElementById("about").style.display = "none";
+//   document.getElementById("projects").style.display = "none";
+//   document.getElementById("timeline").style.display = "none";
+//   document.getElementById("landing-page").style.display = "block";
+// }
+
+function showSection(sectionId) {
+  const sections = ["landing-page", "timeline", "projects", "about"];
+  sections.forEach(section => {
+    const el = document.getElementById(section);
+    el.style.display = (section === sectionId) ? "block" : "none";
+    if (section === sectionId) {
+      el.classList.add("fade-in");
+    } else {
+      el.classList.remove("fade-in");
+    }
+  });
 }
