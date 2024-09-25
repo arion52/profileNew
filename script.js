@@ -1,10 +1,10 @@
 const texts = ["Web developer", "Mobile developer", "ML Engineer"]; // Array of texts to type
 
 let currentText = 0;
-let textElem = document.querySelector('.typewriter'); // Selecting element with class 'typewriter'
+let textElem = document.querySelector(".typewriter"); // Selecting element with class 'typewriter'
 
 function writeText() {
-  let textArr = texts[currentText].split('');
+  let textArr = texts[currentText].split("");
   let index = 0;
 
   function writeChar() {
@@ -28,7 +28,9 @@ function writeText() {
 }
 writeText();
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -39,6 +41,36 @@ function scrollFunction() {
 }
 
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // Smooth scrolling back to the top
+  });
+}
+
+function showAbout() {
+  document.getElementById("landing-page").style.display = "none";
+  document.getElementById("projects").style.display = "none";
+  document.getElementById("timeline").style.display = "none";
+  document.getElementById("about").style.display = "block";
+}
+
+function showProjects() {
+  document.getElementById("landing-page").style.display = "none";
+  document.getElementById("about").style.display = "none";
+  document.getElementById("timeline").style.display = "none";
+  document.getElementById("projects").style.display = "block";
+}
+
+function showTimeline() {
+  document.getElementById("landing-page").style.display = "none";
+  document.getElementById("about").style.display = "none";
+  document.getElementById("projects").style.display = "none";
+  document.getElementById("timeline").style.display = "block";
+}
+
+function showLandingPage() {
+  document.getElementById("about").style.display = "none";
+  document.getElementById("projects").style.display = "none";
+  document.getElementById("timeline").style.display = "none";
+  document.getElementById("landing-page").style.display = "block";
 }
