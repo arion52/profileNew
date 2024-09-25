@@ -182,7 +182,7 @@ body {
 }
 
 .code {
-  background-color: #36363656;
+  background-color: rgba(95, 95, 95, 0.248);
   border-radius: 15px;
   padding-bottom: 10px;
   padding-top: 0px;
@@ -191,6 +191,9 @@ body {
   display: flex;
   flex-direction: row;
   font-size: 17px;
+  backdrop-filter: blur(50px);
+  border: 1px solid rgba(255, 255, 255, 0.151);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.229);
 }
 
 .code-line {
