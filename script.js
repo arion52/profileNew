@@ -59,3 +59,20 @@ function showSection(sectionId) {
     }
   });
 }
+
+// function resizeGridItem(item) {
+//   const grid = document.querySelector('.project-container');
+//   const rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+//   const rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+//   const contentHeight = item.querySelector('.overlay').getBoundingClientRect().height;
+//   const rowSpan = Math.ceil((contentHeight + rowGap) / (rowHeight + rowGap));
+//   item.style.gridRowEnd = "span " + rowSpan;
+// }
+
+// function resizeAllGridItems() {
+//   const allItems = document.querySelectorAll('.project-item');
+//   allItems.forEach(resizeGridItem);
+// }
+
+// window.addEventListener('load', resizeAllGridItems);
+// window.addEventListener('resize', resizeAllGridItems);
