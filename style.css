@@ -1,3 +1,19 @@
+:root {
+  --background-gradient-start: #091625;
+  --background-gradient-end: #000000  ;
+  --primary-color: #5f85ff;
+  --secondary-color: #bb86fc;
+  --accent-color: #ff7575;
+  --text-color: #e0e0e0;
+  --muted-text-color: #b0b0b0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
@@ -7,14 +23,19 @@ body {
 }
 
 body {
-  font-family: -apple-system, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: linear-gradient(to right, black, rgb(18, 47, 71));
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: radial-gradient(Circle, var(--background-gradient-start), var(--background-gradient-end));
+  /* background: #000000; */
+  background-attachment: fixed;
+  color: var(--text-color);
 }
 
 #particles-js {
+  position: fixed;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .container-fluid {
@@ -35,21 +56,60 @@ body {
   align-items: center;
 }
 
+.social {
+  align-self: start;
+  padding: 20px;
+  color: var(--text-color);
+  word-spacing: 2cm;
+  text-align: right;
+}
+.social a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.social a:hover {
+  color: var(--primary-color);
+}
+
 .text {
-  font-size: larger;
+  font-size: 24px;
   position: absolute;
-  top: 50%;
-  left: 25%;
   transform: translate(-50%, -50%);
   text-align: left;
   color: #cfcfcf;
-  padding: 30px;
-  border-radius: 20px;
+  padding: 20px;
+  border-radius: 40px;
   background-color: rgba(180, 180, 180, 0.15);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   overflow: auto;
+  width: 360px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 10px;
+}
+
+.top {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.bottom {
+  position: absolute;
+  top: calc(50% + 180px); /* 50% from top + height of .text + 50px padding */
+  left: 15%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .picture {
@@ -142,12 +202,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(15, 32, 39, 0); /* Slightly transparent dark color */
+  backdrop-filter: blur(10px);
 }
 
 .navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: var(--text-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -157,7 +219,7 @@ body {
 .navbar-brand {
   font-size: 20px;
   width: max-content;
-  margin-left: 250px;
+  margin-left: 450px;
   margin-right: 250px;
   color: #f2f2f2;
   text-decoration: none;
@@ -165,7 +227,27 @@ body {
 
 .navbar a:hover {
   text-decoration: underline;
-  color: rgb(180, 231, 255);
+  color: var(--primary-color);
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: inline;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  /* align right center */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* move bit more to right */
+  padding-left: 450px;
+
 }
 
 .navbar li {
@@ -183,7 +265,11 @@ body {
 }
 
 .code {
-  background-color: rgba(95, 95, 95, 0.16);
+  background-color: rgba(180, 180, 180, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
   border-radius: 16px;
   padding-bottom: 10px;
   padding-top: 0px;
@@ -192,10 +278,6 @@ body {
   display: flex;
   flex-direction: row;
   font-size: 17px;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(95, 95, 95, 0.3);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .code-line {
@@ -205,33 +287,13 @@ body {
 
 /* Code Styles */
 
-.comment {
-  color: #818181;
-}
-
-.function {
-  color: #569cd6;
-}
-
-.variable {
-  color: #eb6e6e;
-}
-
-.string {
-  color: #ce9178;
-}
-
-.number {
-  color: #cebca8;
-}
-
-.operator {
-  color: #af9cf5;
-}
-
-.keyword {
-  color: #4ec9b0;
-}
+.comment { color: #8B949E; }
+.function { color: #D2A8FF; }
+.variable { color: #FFA657; }
+.string { color: #A5D6FF; }
+.number { color: #79C0FF; }
+.operator { color: #FF7B72; }
+.keyword { color: #FF7B72; }
 
 /* scroll to top */
 .scroll-top::before {

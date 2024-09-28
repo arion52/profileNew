@@ -21,11 +21,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
   </head>
+  
   <body>
     <nav
       class="navbar navbar-expand-lg navbar-dark"
       style="
-        background-color: #8b8b8b00;
         font-family: -apple-system, -apple-system, BlinkMacSystemFont,
           'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
           'Helvetica Neue', sans-serif;
@@ -59,9 +59,6 @@
               <a class="nav-link" href="#" onclick="showSection('projects')">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#" onclick="showSection('timeline')">Timeline</a>
             </li>
           </ul>
@@ -73,17 +70,34 @@
       <div id="particles-js">
         <div class="container-fluid">
           <div class="content">
-            <div class="text">
-              <p style="color: rgb(175, 175, 175)">Hello and welcome! I'm</p>
-              <h1>Arion</h1>
-              <p
-                style="
-                  color: rgb(175, 175, 175);
-                  font-family: 'Courier New', Courier, monospace;
-                "
-                class="typewriter"
-              ></p>
+            <div class="top">  
+              <div class="text">
+                <br />
+                <p style="color: rgba(255, 255, 255, 0.575)">Hello and welcome! I'm</p>
+                <h1>Arion</h1>
+                <p
+                  style="
+                    color: rgb(255, 255, 255, 0.575);
+                    font-family: 'Courier New', Courier, monospace;
+                  "
+                  class="typewriter"
+                ></p>
+              </div>
             </div>
+              <div class="bottom">
+                <div class="social">
+                  <a href="" target="_blank" style="margin-right: 10px;">
+                  <i class="fab fa-github"></i>
+                  </a>
+                  <a href="" target="_blank" style="margin-right: 10px;">
+                  <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="mailto:" target="_blank" style="margin-right: 10px;">
+                  <i class="fas fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            
             <div class="picture">
               <img
                 src="assets/1.png"
@@ -254,44 +268,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="contact" id="contact">
-      <h2 style="color: #336297; font-size: 0.9cm">Contact/&gt;</h2>
-      <div class="contact-container">
-        <div class="contact-content">
-          <div class="contact-text">
-            <p>Get in touch with me</p>
-            <span class="contact-icon"><i class="fas fa-envelope"></i></span
-            ><span class="contact-link"
-              ><a href="mailto:bargavkrishna26@gmail.com">Mail</a></span
-            >
-          </div>
-        </div>
-        <div class="contact-content">
-          <div class="contact-text">
-            <p>Check out my GitHub</p>
-            <span class="contact-icon"><i class="fab fa-github"></i></span
-            ><span class="contact-link"
-              ><a href="https://github.com/arion52" target="_blank"
-                >Arion52</a
-              ></span
-            >
-          </div>
-        </div>
-        <div class="contact-content"></div>
-        <div class="contact-text">
-          <p>Connect with me on LinkedIn</p>
-          <span class="contact-icon"><i class="fab fa-linkedin"></i></span
-          ><span class="contact-link"
-            ><a
-              href="https://www.linkedin.com/in/bargav-krishna-2b3b3b1b3/"
-              target="_blank"
-              >Arion</a
-            ></span
-          >
-        </div>
-      </div>
-    </div> -->
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <img src="assets/scroll-top.png" />
