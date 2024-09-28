@@ -1,4 +1,4 @@
-const texts = ["Web developer", "Mobile developer", "ML Engineer"]; // Array of texts to type
+const texts = ["Web developer", "Mobile developer", "ML Engineer", "DL Researcher"]; // Array of texts to type
 
 let currentText = 0;
 let textElem = document.querySelector(".typewriter"); // Selecting element with class 'typewriter'
