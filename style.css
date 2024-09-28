@@ -60,7 +60,7 @@ body {
   align-self: start;
   padding: 20px;
   color: var(--text-color);
-  word-spacing: 2cm;
+  word-spacing: 0.5cm;
   text-align: right;
 }
 .social a {
@@ -74,8 +74,12 @@ body {
 }
 
 .text {
-  font-size: 24px;
   position: absolute;
+  top: 50%;
+  left: 25%;
+  display: flex;
+  padding: 10px;
+  font-size: 24px;
   transform: translate(-50%, -50%);
   text-align: left;
   color: #cfcfcf;
@@ -87,29 +91,11 @@ body {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   overflow: auto;
   width: 360px;
-  height: 270px;
-  display: flex;
+  height: 320px;
   flex-direction: column;
   justify-content: center;
   align-items: left;
   gap: 10px;
-}
-
-.top {
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.bottom {
-  position: absolute;
-  top: calc(50% + 180px); /* 50% from top + height of .text + 50px padding */
-  left: 15%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .picture {
