@@ -1,281 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arion</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark"
-      style="
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arion</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="
         font-family: -apple-system, -apple-system, BlinkMacSystemFont,
           'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
           'Helvetica Neue', sans-serif;
-      "
-    >
-      <div class="container-fluid">
-        <a
-          class="navbar-brand"
-          href="#"
-          onclick="showSection('landing-page')"
-          style="font-size: 0.7cm; align-content: center"
-          >Arion</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="showSection('about')">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="showSection('projects')">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="showSection('timeline')">Timeline</a>
-            </li>
-          </ul>
-        </div>
+      ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" onclick="showSection('landing-page')"
+        style="font-size: 0.7cm; align-content: center">Arion</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showSection('about')">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showSection('projects')">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showSection('timeline')">Timeline</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <div id="landing-page">
-      <div id="particles-js">
-        <div class="container-fluid">
-          <div class="content">
-              <div class="text">
-                <br />
-                <p style="color: rgba(255, 255, 255, 0.575)">Hello and welcome! I'm</p>
-                <h1>Arion</h1>
-                <p
-                  style="
+  <div id="landing-page">
+    <div id="particles-js">
+      <div class="container-fluid">
+        <div class="content">
+          <div class="text">
+            <br />
+            <p style="color: rgba(255, 255, 255, 0.575)">Hello and welcome! I'm</p>
+            <h1>Arion</h1>
+            <p style="
                     color: rgb(255, 255, 255, 0.575);
                     font-family: 'Courier New', Courier, monospace;
-                  "
-                  class="typewriter"
-                ></p>
-                <div class="social">
-                  <a href="" target="_blank" style="margin-right: 10px;">
-                  <i class="fab fa-github"></i>
-                  </a>
-                  <a href="" target="_blank" style="margin-right: 10px;">
-                  <img src="assets/linkedin.png" alt="LinkedIn" style="height: 35px; position: relative; top: -3px;">
-                  </a>
-                  <a href="" target="_blank" style="margin-right: 10px;">
-                    <img src="assets/email.png" alt="email" style="height: 25px; position: relative; top: -3px;">
-                  </a>
-                </div>
-              </div>
-            
-            <div class="picture">
-              <img
-                src="assets/1.png"
-                alt="Person 1"
-                style="width: 100%; height: 100%"
-              />
+                  " class="typewriter"></p>
+            <div class="social">
+              <a href="" target="_blank" style="margin-right: 10px;">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="" target="_blank" style="margin-right: 10px;">
+                <img src="assets/linkedin.png" alt="LinkedIn" style="height: 35px; position: relative; top: -3px;">
+              </a>
+              <a href="" target="_blank" style="margin-right: 10px;">
+                <img src="assets/email.png" alt="email" style="height: 25px; position: relative; top: -3px;">
+              </a>
             </div>
+          </div>
+
+          <div class="picture">
+            <img src="assets/1.png" alt="Person 1" style="width: 100%; height: 100%" />
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="about" id="about" style="display: none; padding: 20px">
-      <div class="glsmp">
-        <br />
-        <h2 style="color: #336297; font-size: 0.9cm; text-align: left">
-          About Me/&gt;
-        </h2>
-        <br />
-        <div class="code" style="padding: 20px; border-radius: 10px">
-          <div class="code-block">
-            <div class="code-line">
-              <span class="comment"># I will because I can.</span>
-            </div>
-            <div class="code-line">
-              <span class="keyword">class</span
-              ><span class="operator"> Arion</span>
-            </div>
-            <div class="code-line">
-              &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">def</span> __init__(<span class="operator">self</span>):
-            </div>
-            <div class="code-line">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                class="operator"
-                >self</span
-              >.<span class="variable">name</span> = <span class="string">"Arion"</span>
-            </div>
-            <div class="code-line">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                class="operator"
-                >self</span
-              >.<span class="variable">age</span> = <span class="number">18</span>
-            </div>
-            <div class="code-line">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                class="operator"
-                >self</span
-              >.<span class="variable">about</span> = <span class="string"
-                >"Hey I'm a curious student who loves to learn new things by getting hands on with the code."</span
-              >
-            </div>
-            <div class="code-line">
-              &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">def</span> skills(<span class="operator">self</span>):
-            </div>
-            <div class="code-line">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> [<span class="string">'HTML/CSS', 'JavaScript', 'Python', 'Flutter/Dart',
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'React', 'Bootstrap', 'git', 'UI/UX', 'Tensorflow', 'OpenCV', 'sklearn'</span>, <span class="typewriter"></span> ]
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="projects" id="projects" style="display: none">
-      <h2 style="color: #336297; font-size: 0.9cm; width: 75%; margin: 0 auto">
-        Projects/&gt;
+  <div class="about" id="about" style="display: none; padding: 20px">
+    <div class="glsmp">
+      <br />
+      <h2 style="color: #336297; font-size: 0.9cm; text-align: left">
+        About Me/&gt;
       </h2>
-      <br /> <br />
-      <div class="project-container">
-        <div class="project-item">
-          <img src="assets/bmr.png" alt="Project Image">
-          <div class="overlay">
-            <h3>Bodhimaram</h3>
-            <p>Website made with wordpress for playschool</p>
-            <a href="https://bodhimaram.in/" target="_blank">View More</a>
+      <br />
+      <div class="code" style="padding: 20px; border-radius: 10px">
+        <div class="code-block">
+          <div class="code-line">
+            <span class="comment"># I will because I can.</span>
           </div>
-        </div>
-        <div class="project-item">
-          <img src="assets/expx.png" alt="Project Image">
-          <div class="overlay">
-            <h3>Expx</h3>
-            <p>A mobile application to learn new skills</p>
-            <a href="#">View More</a>
+          <div class="code-line">
+            <span class="keyword">class</span><span class="operator"> Arion</span>
           </div>
-        </div>
-        <div class="project-item">
-          <img src="assets/sre.png" alt="Project Image">
-          <div class="overlay">
-            <h3>Road Network Extraction</h3>
-            <p>Hybrid CNN and U-Net model to extract road networks</p>
-            <a href="#">View More</a>
+          <div class="code-line">
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">def</span> __init__(<span class="operator">self</span>):
           </div>
-        </div>
-        <div class="project-item">
-          <img src="assets/solar.webp" alt="Project Image">
-          <div class="overlay">
-            <h3>solarVert</h3>
-            <p>Application to manage our solar panel</p>
-            <a href="#">View More</a>
+          <div class="code-line">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="operator">self</span>.<span
+              class="variable">name</span> = <span class="string">"Arion"</span>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="timeline" style="display: none">
-      <h2 style="color: #336297; font-size: 0.9cm; text-align: center">
-        Timeline/&gt;
-      </h2>
-      <div class="timeline-container">
-        <div class="container left">
-          <div class="content">
-            <h2>August 2017</h2>
-            <p>Started coding with C and Python.</p>
+          <div class="code-line">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="operator">self</span>.<span
+              class="variable">age</span> = <span class="number">18</span>
           </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h2>May 2019</h2>
-            <p>
-              Developed my first personal website using HTML, CSS, and
-              JavaScript.
-            </p>
+          <div class="code-line">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="operator">self</span>.<span
+              class="variable">about</span> = <span class="string">"Hey I'm a curious student who loves to learn new
+              things by getting hands on with the code."</span>
           </div>
-        </div>
-        <div class="container left">
-          <div class="content">
-            <h2>March 2020</h2>
-            <p>
-              Explored machine learning with TensorFlow, Pytorch and
-              scikit-learn.
-            </p>
+          <div class="code-line">
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">def</span> skills(<span class="operator">self</span>):
           </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h2>2021</h2>
-            <p>Interned at Bodhimaram, working on full-stack development.</p>
-          </div>
-        </div>
-        <div class="container left">
-          <div class="content">
-            <h2>November 2023</h2>
-            <p>Started research on liquid neural networks</p>
-          </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h2>February 2024</h2>
-            <p>
-              3rd place in a hackathon, building a hybrid CNN and U-Net model.
-            </p>
-          </div>
-        </div>
-        <div class="container left">
-          <div class="content">
-            <h2>August 2024</h2>
-            <p>Developed a solar panel management app ('solarVert').</p>
-          </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h2>September 2024</h2>
-            <p>
-              Won second place in human pose estimation hackathon. Got an
-              internship through the same.
-            </p>
+          <div class="code-line">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> [<span
+              class="string">'HTML/CSS', 'JavaScript', 'Python', 'Flutter/Dart',
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'React',
+              'Bootstrap','git', 'UI/UX', 'Tensorflow', 'OpenCV', 'sklearn'</span>, <span class="typewriter"></span> ]
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <img src="assets/scroll-top.png" />
-    </button>
+  <div class="projects" id="projects" style="display: none">
+    <h2 style="color: #336297; font-size: 0.9cm; width: 75%; margin: 0 auto">
+      Projects/&gt;
+    </h2>
+    <br /> <br />
+    <div class="project-container">
+      <div class="project-item">
+        <img src="assets/bmr.png" alt="Project Image">
+        <div class="overlay">
+          <h3>Bodhimaram</h3>
+          <p>Website made with wordpress for playschool</p>
+          <a href="https://bodhimaram.in/" target="_blank">View More</a>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="assets/expx.png" alt="Project Image">
+        <div class="overlay">
+          <h3>Expx</h3>
+          <p>A mobile application to learn new skills</p>
+          <a href="#">View More</a>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="assets/sre.png" alt="Project Image">
+        <div class="overlay">
+          <h3>Road Network Extraction</h3>
+          <p>Hybrid CNN and U-Net model to extract road networks</p>
+          <a href="#">View More</a>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="assets/solar.webp" alt="Project Image">
+        <div class="overlay">
+          <h3>solarVert</h3>
+          <p>Application to manage our solar panel</p>
+          <a href="#">View More</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
-    <script src="particle.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <div id="timeline" style="display: none">
+    <h2 style="color: #336297; font-size: 0.9cm; text-align: center">
+      Timeline/&gt;
+    </h2>
+    <div class="timeline-container">
+      <div class="container left">
+        <div class="content">
+          <h2>August 2017</h2>
+          <p>Started coding with C and Python.</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>May 2019</h2>
+          <p>
+            Developed my first personal website using HTML, CSS, and
+            JavaScript.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>March 2020</h2>
+          <p>
+            Explored machine learning with TensorFlow, Pytorch and
+            scikit-learn.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>2021</h2>
+          <p>Interned at Bodhimaram, working on full-stack development.</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>November 2023</h2>
+          <p>Started research on liquid neural networks</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>February 2024</h2>
+          <p>
+            3rd place in a hackathon, building a hybrid CNN and U-Net model.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>August 2024</h2>
+          <p>Developed a solar panel management app ('solarVert').</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>September 2024</h2>
+          <p>
+            Won second place in human pose estimation hackathon. Got an
+            internship through the same.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <img src="assets/scroll-top.png" />
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+  <script src="particle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
