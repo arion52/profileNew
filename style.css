@@ -237,7 +237,7 @@ body {
   align-items: center;
   gap: 20px;
   /* move bit more to right */
-  padding-left: 450px;
+  padding-left: 150px;
 }
 
 .navbar li {
