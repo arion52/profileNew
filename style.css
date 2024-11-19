@@ -232,6 +232,11 @@ body {
   color: var(--primary-color);
 }
 
+h1 {
+  font-size: 24px;
+  color: var(--text-color);
+}
+
 /* Nav bar styles*/
 .navbar {
   overflow: hidden;
