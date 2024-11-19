@@ -183,6 +183,55 @@ body {
   }
 }
 
+.profile-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  display: inline-block;
+  margin-bottom: 20px;
+  background-image: url("assets/1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.bio {
+  font-size: 16px;
+  color: var(--muted-text-color);
+  margin-bottom: 20px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.social a:hover {
+  color: var(--primary-color);
+}
+
 /* Nav bar styles*/
 .navbar {
   overflow: hidden;
