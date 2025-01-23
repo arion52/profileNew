@@ -489,6 +489,7 @@ h1 {
 
 .overlay a:hover {
   background-color: #0056b3;
+  color: var(--text-color);
 }
 
 @media only screen and (max-width: 900px) {
