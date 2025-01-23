@@ -229,7 +229,7 @@ body {
 }
 
 .social a:hover {
-  color: var(--primary-color);
+  color: var(--text-color);
 }
 
 h1 {
