@@ -74,6 +74,10 @@ body {
   font-size: 25px;
 }
 
+.social :hover{
+  color: var(--text-color);
+}
+
 .text {
   position: absolute;
   top: 50%;
