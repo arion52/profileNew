@@ -1,4 +1,4 @@
-const texts = ["Web developer", "Mobile developer", "ML Engineer", "DL Researcher"]; 
+const texts = ["Web developer", "App developer", "ML Engineer", "DL Researcher"]; 
 
 let currentText = 0;
 let textElem = document.querySelector(".typewriter");
