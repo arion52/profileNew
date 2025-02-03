@@ -660,31 +660,55 @@ h1 {
 
 /* Media query for mobile devices */
 @media screen and (max-width: 768px) {
-  .timeline-container .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-
-  .timeline-container .container.left,
-  .timeline-container .container.right {
-    left: 0;
-  }
-
+  /* Align timeline line */
   .timeline-container::before {
-    left: 30px;
+      left: 30px;
   }
 
-  .timeline-container .container::after {
+  /* Align circles with timeline line */
+  .timeline-container .container.left::after {
     left: 30px;
+    margin-left: 32px;
+}
+
+.timeline-container .container.right::after {
+  left: 30px; /* Align with timeline line */
+  transform: translateX(0); /* Remove unnecessary transformations */
+  margin-left: 28px; /* Reset margin */
+}
+
+  /* Stack content boxes vertically */
+  .timeline-container .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 20px;
   }
 
+  /* Reset positioning for left/right containers */
+  .timeline-container .container.left{
+      left: 0;
+      margin-left: -42px;
+  }
+  .timeline-container .container.right {
+      left: 0;
+      margin-left: -50px;
+  }
+
+  /* Remove transformations for content boxes */
   .timeline-container .container.left .content,
   .timeline-container .container.right .content {
-    transform: translateX(0);
-    text-align: left;
+      transform: none;
+      text-align: left;
+  }
+
+  /* Adjust box width */
+  .timeline-container .content {
+      width: calc(100% - 50px);
+      margin-left: auto;
+      margin-right: auto;
   }
 }
+
 
 .fade-in {
   animation: fadeIn 0.5s ease-in;
