@@ -265,7 +265,7 @@ h1 {
 .navbar-brand {
   font-size: 20px;
   width: max-content;
-  margin-left: 450px;
+  margin-left: 300px;
   margin-right: 250px;
   color: #f2f2f2;
   text-decoration: none;
@@ -281,6 +281,7 @@ h1 {
   display: inline;
   padding: 10px;
   margin: 0;
+  margin-right: -180px;
   text-align: center;
   /* align right center */
   width: 100%;
@@ -288,7 +289,7 @@ h1 {
   align-items: center;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content:last baseline;
   align-items: center;
   gap: 20px;
   /* move bit more to right */
@@ -314,7 +315,11 @@ h1 {
 }
 
 .code {
-  background-color: rgba(35,39,46,255);
+  background-color: rgba(35, 39, 46, 0.486);
+  /* glass morphism */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   padding: 20px;
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
