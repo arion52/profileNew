@@ -632,7 +632,7 @@ h1 {
   content: "";
   position: absolute;
   width: 2px;
-  background-color: #336297;
+  background-color: #87b3e5;
   top: 0;
   bottom: 0;
   left: 50.85%;
@@ -646,7 +646,7 @@ h1 {
   position: absolute;
   width: 25px;
   height: 25px;
-  background-color: #336297;
+  background-color: #87b3e5;
   border: 4px solid #fff;
   top: 20px;
   left: 50%; /* Keep this as is */
@@ -680,7 +680,7 @@ h1 {
 /* Text styling inside the timeline box */
 .timeline-container h2 {
   font-size: 1.5em;
-  color: #336297;
+  color: #87b3e5;
 }
 
 .timeline-container .content p {
