@@ -58,3 +58,7 @@ function showSection(sectionId) {
     }
   });
 }
+
+document.querySelector('.navbar-toggler').addEventListener('click', function() {
+  document.querySelector('.navbar').classList.toggle('menu-expanded');
+});
