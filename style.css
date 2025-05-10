@@ -385,14 +385,17 @@ h1 {
 
 .code-wrapper {
   position: relative;
+  /* background-image: url("assets/kali-linux-wallpaper.png"); */
+  /* background-size: cover; */
 }
 
 .code {
-  background-color: rgba(35, 39, 46, 0.486);
+  /* background-color: rgba(3, 3, 3, 0.486); */
+  background-color: rgba(225, 225, 225, 0.1);
   /* glass morphism */
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   padding: 20px;
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
