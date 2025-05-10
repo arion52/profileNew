@@ -62,3 +62,22 @@ function showSection(sectionId) {
 document.querySelector('.navbar-toggler').addEventListener('click', function() {
   document.querySelector('.navbar').classList.toggle('menu-expanded');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Select all timeline content elements
+  const timelineItems = document.querySelectorAll('.tlcontent');
+  
+  // Add event listeners for hover effects
+  timelineItems.forEach(item => {
+    // Mouse enter - Change border color to blue
+    item.addEventListener('mouseenter', function() {
+      this.style.boxShadow = '0 5px 15px rgba(94, 137, 255, 0.36)'; // Blue border
+      this.style.transition = 'box-shadow 0.5s ease'; // Smooth transition
+    });
+    
+    // Mouse leave - Return to original state
+    item.addEventListener('mouseleave', function() {
+      this.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.1)'; // Original shadow
+    });
+  });
+});
